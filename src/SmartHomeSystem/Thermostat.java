@@ -1,22 +1,20 @@
 package SmartHomeSystem;
 
-import java.awt.desktop.SystemSleepEvent;
-
-public class Light implements SmartDevice{
+public class Thermostat implements SmartDevice{
     String deviceName;
-    final String type = "Light";
-    int brightness;
+    final String type = "Thermostat";
+    float temperature;
     String status;
 
-    public Light(String deviceName, int brightness, String status){
+    public Thermostat(String deviceName, float temperature, String status){
         this.deviceName = deviceName;
-        this.brightness = brightness;
+        this.temperature = temperature;
         this.status = status;
     }
 
     @Override
     public void turnOn() {
-        status ="ON";
+        status = "ON";
     }
 
     @Override
@@ -28,7 +26,7 @@ public class Light implements SmartDevice{
     public void displayDeviceInfo() {
         System.out.println("Device name: " + deviceName);
         System.out.println("Device type: " + type);
-        System.out.println("Brightness: " + brightness);
+        System.out.println("Temperature: " + temperature + "ºF");
         System.out.println("Status: " + status);
     }
 }
