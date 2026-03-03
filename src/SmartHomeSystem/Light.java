@@ -2,18 +2,23 @@ package SmartHomeSystem;
 
 import java.awt.desktop.SystemSleepEvent;
 
+//Class Light implementing the SmartDevice Interface
 public class Light implements SmartDevice{
+
+    //Declare variables for the class
     String deviceName;
     final String type = "Light";
     int brightness;
     String status;
 
+    // Light Object constructor
     public Light(String deviceName, int brightness, String status){
         this.deviceName = deviceName;
         this.brightness = brightness;
         this.status = status;
     }
 
+    //Override methods from the interface
     @Override
     public void turnOn() {
         status ="ON";
