@@ -3,7 +3,7 @@ package SmartHomeSystem;
 import java.util.Scanner;
 
 public class SmartHomeController {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DeviceManager manager = new DeviceManager();
 
@@ -36,7 +36,7 @@ public class SmartHomeController {
                     String name = scanner.nextLine();
 
                     System.out.println("Enter temperature ºF: ");
-                    float temperature = scanner.nextFloat();
+                    int temperature = scanner.nextInt();
                     scanner.nextLine();
 
                     System.out.println("Enter device status (ON/OFF): ");

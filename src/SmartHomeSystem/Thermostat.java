@@ -4,13 +4,13 @@ package SmartHomeSystem;
 public class Thermostat implements SmartDevice{
 
     //Declare class variables
-    String deviceName;
-    final String type = "Thermostat";
-    float temperature;
-    String status;
+    private String deviceName;
+    private final String type = "Thermostat";
+    private int temperature;
+    private String status;
 
     //Thermostat Object constructor
-    public Thermostat(String deviceName, float temperature, String status){
+    public Thermostat(String deviceName, int temperature, String status){
         this.deviceName = deviceName;
         this.temperature = temperature;
         this.status = status;

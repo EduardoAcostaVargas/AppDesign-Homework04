@@ -6,10 +6,10 @@ import java.awt.desktop.SystemSleepEvent;
 public class Light implements SmartDevice{
 
     //Declare variables for the class
-    String deviceName;
-    final String type = "Light";
-    int brightness;
-    String status;
+    private String deviceName;
+    private final String type = "Light";
+    private int brightness;
+    private String status;
 
     // Light Object constructor
     public Light(String deviceName, int brightness, String status){
